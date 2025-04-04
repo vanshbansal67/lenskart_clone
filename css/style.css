@@ -1,7 +1,7 @@
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+ @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
 
 
- crossorigin="anonymous" referrerpolicy="no-referrer" />:root {
+ :root {
      --red: red;
      --text: #333368;
      --topaz: #18cfa8;
@@ -242,7 +242,7 @@
  }
 
 
- <style>:root {
+ :root {
      --red: red;
      --text: #333368;
      --topaz: #18cfa8;
@@ -480,6 +480,31 @@
      --orange: #cc4b3a;
      --eye-orange: #FFEFED;
      --grey-border: #d7ddf9;
+ }
+
+ html,
+ body {
+     overflow-x: hidden;
+     /* Hides horizontal scrolling */
+     width: 100%;
+ }
+
+ .fix {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     background-color: rgb(252, 255, 255);
+     /* Adjust as needed */
+     color: white;
+     padding: 5px 15px;
+     z-index: 1000;
+     /* Ensures it's above other elements */
+ }
+
+ body {
+     padding-top: 180px;
+     /* Prevents content from hiding under navbar */
  }
 
  .fontsz {
@@ -692,6 +717,8 @@ a {
 
  .col-footer {
      color: white;
+
+     font-family: var(--font-lksans-regular);
  }
 
  .rel {
@@ -729,4 +756,30 @@ a {
 
  .bg-thirdnav {
      color: #fbf9f7;
+ }
+
+ .col-footer>a {
+     color: white;
+ }
+
+ .col-footer div a {
+     color: white;
+     text-decoration: none;
+ }
+
+ .fs15 {
+     font-size: 15px;
+ }
+
+
+ .lower-footer::before {
+     content: '';
+     flex: 1 1;
+     border-top: 1px solid #cfcdcd;
+     margin: 1.5rem 5px;
+ }
+
+ .lower-footer {
+     display: flex;
+     align-items: center;
  }
