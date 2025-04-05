@@ -485,7 +485,6 @@
  html,
  body {
      overflow-x: hidden;
-     /* Hides horizontal scrolling */
      width: 100%;
  }
 
@@ -495,16 +494,13 @@
      left: 0;
      width: 100%;
      background-color: rgb(252, 255, 255);
-     /* Adjust as needed */
-     color: white;
      padding: 5px 15px;
      z-index: 1000;
-     /* Ensures it's above other elements */
+     color: #000042;
  }
 
  body {
      padding-top: 180px;
-     /* Prevents content from hiding under navbar */
  }
 
  .fontsz {
@@ -568,16 +564,14 @@
  }
 
  .weartrend {
-     font-family: Rajdhani-Regular;
+     font-family: var(--Rajdhani-Regular);
      padding-left: 20px;
  }
 
  .colr {
      font-size: 50px;
      color: #333333;
-     font-family: font-default-medium;
-
-
+     font-family: var(--font-default-medium);
  }
 
  .colr2 {
@@ -590,14 +584,17 @@
      border-radius: 12%;
      padding-top: 12%;
      padding-bottom: 12%;
-     width: 35px;
+     width: 30px;
  }
 
+ .first-car {
+     margin-top: -25px;
+ }
 
  .txt {
      font-size: 20px;
      color: #333333;
-     font-family: font-default-medium;
+     font-family: var(--font-default-medium);
 
  }
 
@@ -630,39 +627,6 @@
      align-items: center;
  }
 
- /* .txtstyle {
-    display: inline-block;
-    height: 100%;
-    font-size: 20px;
-    line-height: 60px;
-    margin: 4px;
-    text-transform: uppercase;
-
-    align-items: center;
-    justify-content: center;
-    padding-right: 5px;
-
-}
-
-a {
-    text-decoration: none !important;
-}
-
-.txt2 {
-    height: 60px;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-}
-
-.txt3 {
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background: #fbf9f7;
-} */
-
-
  .bottomborder {
      display: flex;
      border-bottom: 1px solid #cfcdcd;
@@ -684,7 +648,6 @@ a {
 
  .rightarrow3,
  .leftarrow3 {
-     /* position: absolute; */
      top: 50%;
      transform: translateY(-50%);
      z-index: 5;
@@ -734,13 +697,12 @@ a {
  .hover-container {
      display: none;
      position: absolute;
-     top: 36%;
+     top: 100%;
      left: 0;
      width: auto;
-     /* height: auto; */
+     /* height: 100%; */
      padding: 10px;
-     background: lightgray;
-     border-radius: 5px;
+     background: white;
      margin: 0 15px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
      z-index: 2;
@@ -755,7 +717,7 @@ a {
  }
 
  .bg-thirdnav {
-     color: #fbf9f7;
+     color: #FBF9F7;
  }
 
  .col-footer>a {
@@ -783,3 +745,6 @@ a {
      display: flex;
      align-items: center;
  }
+
+
+ .fix {}
